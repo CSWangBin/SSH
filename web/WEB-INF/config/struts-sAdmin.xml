@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="admin-struts" extends="my-struts" namespace="/admin">
+		<action name="*" class="com.cs.action.SAdminAction" method="{1}">
+			<result name="all" type="json"></result>
+			<result name="query" type="json"></result>
+			<!--<result name="delete" type="json"/>-->
+			<result name="update" type="json"/>
+			<result name="add" type="json"/>
+			<result name="home">/index.jsp</result>
+			<!--<result name="select" type="json"/>-->
+			<result name="input">/a.jsp</result>
+			<result name="out">/login.jsp</result>
+		</action>
+	</package>
+</struts>

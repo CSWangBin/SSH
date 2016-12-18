@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.cs.bean">
+   <class name="Merchant" table="t_merchant">
+       <id name="id">
+            <generator class="uuid.hex"/>
+       </id>
+       <property name="user" column="user"/>
+       <property name="name" column="name" type="string"/>
+       <property name="password" column="password"/>
+       <property name="gender" column="gender"/>
+       <property name="grade" column="grade"/>
+       <property name="superior_id" column="superior_id"/>
+       <property name="identity_card" column="identity_card"/>
+       <property name="bank_card" column="bank_card"/>
+       <property name="bank_type" column="bank_type"/>
+       <property name="we_char" column="we_char"/>
+       <property name="family_address" column="family_address"/>
+       <property name="phone" column="phone"/>
+       <property name="last_login_time" column="last_login_time"/>
+       <property name="create_time" column="create_time"/>
+       <property name="status" column="status"/>
+   </class>
+</hibernate-mapping>
